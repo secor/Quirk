@@ -186,6 +186,58 @@ Gates.findKnownGateById = (id, customGateSet) => {
 };
 
 /** @type {!Array<!{hint: !string, gates: !Array<undefined|!Gate>}>} */
+Gates.DemoTopToolboxGroups = [
+    {
+        hint: "Half Turns",
+        gates: [
+            HalfTurnGates.X,
+            undefined,
+            HalfTurnGates.Y,
+            HalfTurnGates.H,
+            HalfTurnGates.Z,
+        ]
+    },
+    {
+        hint: "Quarter Turns",
+        gates: [
+            QuarterTurnGates.SqrtXForward,
+            undefined,
+            QuarterTurnGates.SqrtYForward, 
+            undefined,
+            QuarterTurnGates.SqrtZForward,
+        ]
+    },
+    {
+        hint: "Varying",
+        gates: [
+            PoweringGates.ZForward,
+            undefined,
+            PoweringGates.YForward,
+            undefined,
+            PoweringGates.XForward,
+        ]
+    },
+    {
+        hint: "Composite",
+        gates: [
+            SwapGateHalf,
+            undefined,
+            IncrementGates.IncrementFamily.ofSize(2),
+        ]
+    },
+    {
+        hint: "Simulation",
+        gates: [
+            AmplitudeDisplayFamily.ofSize(2),
+            undefined,
+            BlochSphereDisplay,
+            undefined,
+            ProbabilityDisplayFamily.ofSize(1), 
+        ]
+    },
+];
+
+/** @type {!Array<!{hint: !string, gates: !Array<undefined|!Gate>}>} */
 Gates.TopToolboxGroups = [
     {
         hint: "Probes",
