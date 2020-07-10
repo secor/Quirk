@@ -70,6 +70,7 @@ GatePainting.MAKE_HIGHLIGHTED_DRAWER =
         GatePainting.paintOutline(args);
         GatePainting.paintResizeTab(args);
         GatePainting.paintGateSymbol(args);
+        GatePainting.paintGateLabel(args);
     };
 
 /**
@@ -121,6 +122,26 @@ GatePainting.paintResizeTab = args => {
             }
         }
     }).thenStroke(foreColor);
+};
+
+/**
+ * @param {!GateDrawParams} args
+ */
+GatePainting.paintGateLabel = (args) => {
+    let painter = args.painter;
+    // Modify the rect area to be the label area below the gate.
+    let rect = {
+        h: Config.GATE_LABEL_HEIGHT,
+        w: args.rect.w,
+        x: args.rect.x,
+        y: args.rect.y + Config.TOOLBOX_GATE_SPAN,
+    };
+    painter.printParagraph(
+        args.gate.name,
+        rect,
+        undefined,
+        undefined,
+        Config.GATE_LABEL_FONT_SIZE);
 };
 
 /**

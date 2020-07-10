@@ -110,7 +110,7 @@ class DisplayedToolbox {
             groupIndex * Config.TOOLBOX_GROUP_SPAN;
         let y = this.top +
             (this.labelsOnTop ? Config.TOOLBOX_MARGIN_Y : 3) +
-            dy * Config.TOOLBOX_GATE_SPAN;
+            dy * Config.TOOLBOX_GATE_SPAN_Y;
 
         return new Rect(
             Math.round(x - 0.5) + 0.5,
@@ -353,7 +353,7 @@ class DisplayedToolbox {
      * @returns {!number}
      */
     desiredHeight() {
-        return (1 + this.groupHeight) * (Config.GATE_RADIUS * 2 + 2) - Config.GATE_RADIUS;
+        return (this.groupHeight) * (Config.TOOLBOX_GATE_SPAN_Y + 2) + Config.TOOLBOX_MARGIN_X;
     }
 
     /**

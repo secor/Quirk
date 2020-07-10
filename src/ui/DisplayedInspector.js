@@ -73,7 +73,7 @@ class DisplayedInspector {
      * @returns {!DisplayedInspector}
      */
     static empty(drawArea) {
-        let topToolbox = new DisplayedToolbox('Toolbox', 0, Gates.TopToolboxGroups, true, 3);
+        let topToolbox = new DisplayedToolbox('Toolbox', 0, Gates.DemoTopToolboxGroups, true, 3);
         let displayedCircuit = DisplayedCircuit.empty(topToolbox.desiredHeight());
         let bottomToolbox = new DisplayedToolbox(
             'Toolbox₂',

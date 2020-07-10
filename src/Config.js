@@ -35,6 +35,9 @@ Config.GATE_FILL_COLOR = 'white';
 Config.HIGHLIGHTED_GATE_FILL_COLOR = '#FB7';
 Config.TIME_DEPENDENT_HIGHLIGHT_COLOR = '#FFC';
 
+// Gate typography.
+Config.GATE_LABEL_FONT_SIZE = 10;
+
 // Mixed-state displays are green.
 Config.DISPLAY_GATE_IN_TOOLBOX_FILL_COLOR = '#4F4';
 Config.DISPLAY_GATE_BACK_COLOR = '#EFE';
@@ -56,17 +59,19 @@ Config.REDRAW_COOLDOWN_MILLIS = 10; // Milliseconds. Rate-limit on redraws. Long
 
 /** Half of the span of a drawn gate, width-wise and height-wise.
 * @type {!number} */
-Config.GATE_RADIUS = 20;
-Config.WIRE_SPACING = 50;
+Config.GATE_RADIUS = 24;
+Config.GATE_LABEL_HEIGHT = 24;
+Config.WIRE_SPACING = 80;
 
 Config.BACKGROUND_COLOR = 'white';
 Config.BACKGROUND_COLOR_CIRCUIT = 'white';
 
 // Toolbox layout.
 Config.BACKGROUND_COLOR_TOOLBOX = '#CCC';
-Config.TOOLBOX_GATE_SPACING = 2;
+Config.TOOLBOX_GATE_SPACING = 4;
 Config.TOOLBOX_GROUP_SPACING = 24 - Config.TOOLBOX_GATE_SPACING;
 Config.TOOLBOX_GATE_SPAN = Config.GATE_RADIUS * 2 + Config.TOOLBOX_GATE_SPACING;
+Config.TOOLBOX_GATE_SPAN_Y = Config.GATE_RADIUS * 2 + Config.TOOLBOX_GATE_SPACING + Config.GATE_LABEL_HEIGHT;
 Config.TOOLBOX_GROUP_SPAN = Config.TOOLBOX_GATE_SPAN * 2 + Config.TOOLBOX_GROUP_SPACING;
 Config.TOOLBOX_MARGIN_X = 35;
 Config.TOOLBOX_MARGIN_Y = 18;
