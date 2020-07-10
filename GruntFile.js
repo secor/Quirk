@@ -151,6 +151,24 @@ module.exports = function(grunt) {
                 from: null,
                 to: null
             }
+        },
+        watch: {
+            files: 'src/**/*',
+            tasks: ['build-src']
+        },
+        browserSync: {
+            files: {
+                src : [
+                    'out/*.html'
+                ]
+            },
+            options: {
+                watchTask: true,
+                server: {
+                    baseDir: './out/',
+                    index: 'grunt.html'
+                }
+            }
         }
     });
 
@@ -178,10 +196,12 @@ module.exports = function(grunt) {
         grunt.file.write(dst, output);
     });
 
+    grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-traceur');
 
@@ -193,6 +213,10 @@ module.exports = function(grunt) {
         'uglify:uglify-concatenated-src',
         'inject-js-into-html:html/quirk.template.html:out/tmp/minified-src.js:out/quirk.html',
         'clean:clean-tmp'
+    ]);
+    grunt.registerTask('run-dev', [
+        'browserSync',
+        'watch',
     ]);
     grunt.registerTask('build-debug', [
         'clean:clean-tmp',

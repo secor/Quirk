@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "grunt": "~1.0.1",
+    "grunt-browser-sync": "^2.2.0",
     "grunt-cli": "~1.2.0",
     "grunt-contrib-clean": "~1.0.0",
     "grunt-contrib-concat": "~1.0.1",
@@ -23,6 +24,7 @@
     "traceur": "0.0.111"
   },
   "scripts": {
+    "dev": "grunt run-dev",
     "build": "grunt build-src",
     "test": "grunt test",
     "test-chrome": "grunt test-chrome",
@@ -32,5 +34,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Strilanc/Quirk.git"
+  },
+  "dependencies": {
+    "grunt-contrib-watch": "^1.1.0"
   }
 }
