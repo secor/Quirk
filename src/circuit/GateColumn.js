@@ -12,12 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import {DetailedError} from "src/base/DetailedError.js"
-import {Gate} from "src/circuit/Gate.js"
-import {GateCheckArgs} from "src/circuit/GateCheckArgs.js"
-import {Gates} from "src/gates/AllGates.js"
-import {seq, Seq} from "src/base/Seq.js"
-import {Util} from "src/base/Util.js"
+import {DetailedError} from "../../src/base/DetailedError.js"
+import {Gate} from "../../src/circuit/Gate.js"
+import {GateCheckArgs} from "../../src/circuit/GateCheckArgs.js"
+import {Gates} from "../../src/gates/AllGates.js"
+import {seq, Seq} from "../../src/base/Seq.js"
+import {Util} from "../../src/base/Util.js"
 
 /**
  * A column of gates in a circuit with many qubits.

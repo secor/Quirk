@@ -12,14 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import {Config} from "src/Config.js"
-import {DetailedError} from "src/base/DetailedError.js"
-import {WglArg} from "src/webgl/WglArg.js"
-import {initializedWglContext}  from "src/webgl/WglContext.js"
-import {WglMortalValueSlot} from "src/webgl/WglMortalValueSlot.js"
-import {checkGetErrorResult, checkFrameBufferStatusResult} from "src/webgl/WglUtil.js"
-import {Seq} from "src/base/Seq.js"
-import {WglConfiguredShader} from "src/webgl/WglConfiguredShader.js"
+import {Config} from "../../src/Config.js"
+import {DetailedError} from "../../src/base/DetailedError.js"
+import {WglArg} from "../../src/webgl/WglArg.js"
+import {initializedWglContext}  from "../../src/webgl/WglContext.js"
+import {WglMortalValueSlot} from "../../src/webgl/WglMortalValueSlot.js"
+import {checkGetErrorResult, checkFrameBufferStatusResult} from "../../src/webgl/WglUtil.js"
+import {Seq} from "../../src/base/Seq.js"
+import {WglConfiguredShader} from "../../src/webgl/WglConfiguredShader.js"
 
 /** @type {!WglMortalValueSlot} */
 const ENSURE_ATTRIBUTES_BOUND_SLOT = new WglMortalValueSlot(() => {

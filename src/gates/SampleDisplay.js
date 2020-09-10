@@ -12,18 +12,18 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import {Config} from "src/Config.js"
-import {Gate} from "src/circuit/Gate.js"
-import {GatePainting} from "src/draw/GatePainting.js"
-import {MathPainter} from "src/draw/MathPainter.js"
-import {Point} from "src/math/Point.js"
-import {Rect} from "src/math/Rect.js"
-import {Util} from "src/base/Util.js"
+import {Config} from "../../src/Config.js"
+import {Gate} from "../../src/circuit/Gate.js"
+import {GatePainting} from "../../src/draw/GatePainting.js"
+import {MathPainter} from "../../src/draw/MathPainter.js"
+import {Point} from "../../src/math/Point.js"
+import {Rect} from "../../src/math/Rect.js"
+import {Util} from "../../src/base/Util.js"
 import {
     probabilityStatTexture,
     probabilityPixelsToColumnVector,
     probabilityDataToJson
-} from "src/gates/ProbabilityDisplay.js"
+} from "../../src/gates/ProbabilityDisplay.js"
 
 /**
  * Looks up the simulated probability distribution and samples from it using the current graphics PRNG.

@@ -12,12 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import {Config} from "src/Config.js"
-import {Point} from "src/math/Point.js"
-import {Rect} from "src/math/Rect.js"
-import {RestartableRng} from "src/base/RestartableRng.js"
-import {seq, Seq} from "src/base/Seq.js"
-import {Util} from "src/base/Util.js"
+import {Config} from "../../src/Config.js"
+import {Point} from "../../src/math/Point.js"
+import {Rect} from "../../src/math/Rect.js"
+import {RestartableRng} from "../../src/base/RestartableRng.js"
+import {seq, Seq} from "../../src/base/Seq.js"
+import {Util} from "../../src/base/Util.js"
 
 class Painter {
     /**

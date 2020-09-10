@@ -12,19 +12,19 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import {DetailedError} from "src/base/DetailedError.js"
-import {ketArgs, ketShader} from "src/circuit/KetShaderUtil.js"
-import {Matrix} from "src/math/Matrix.js"
-import {Shaders} from "src/webgl/Shaders.js"
-import {Util} from "src/base/Util.js"
-import {WglArg} from "src/webgl/WglArg.js"
-import {WglConfiguredShader} from "src/webgl/WglConfiguredShader.js"
+import {DetailedError} from "../../src/base/DetailedError.js"
+import {ketArgs, ketShader} from "../../src/circuit/KetShaderUtil.js"
+import {Matrix} from "../../src/math/Matrix.js"
+import {Shaders} from "../../src/webgl/Shaders.js"
+import {Util} from "../../src/base/Util.js"
+import {WglArg} from "../../src/webgl/WglArg.js"
+import {WglConfiguredShader} from "../../src/webgl/WglConfiguredShader.js"
 import {
     Inputs,
     Outputs,
     currentShaderCoder,
     makePseudoShaderWithInputsAndOutputAndCode
-} from "src/webgl/ShaderCoders.js"
+} from "../../src/webgl/ShaderCoders.js"
 
 /**
  * Defines operations used by gates to operate on textures representing superpositions.

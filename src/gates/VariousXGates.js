@@ -12,8 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import {Gate} from "src/circuit/Gate.js"
-import {Matrix} from "src/math/Matrix.js"
+import {Gate} from "../../src/circuit/Gate.js"
+import {Matrix} from "../../src/math/Matrix.js"
 
 let VariousXGates = {};
 

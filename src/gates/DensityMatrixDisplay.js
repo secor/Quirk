@@ -12,24 +12,24 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import {CircuitShaders} from "src/circuit/CircuitShaders.js"
-import {Gate, GateBuilder} from "src/circuit/Gate.js"
-import {GatePainting} from "src/draw/GatePainting.js"
-import {GateShaders} from "src/circuit/GateShaders.js"
-import {MathPainter} from "src/draw/MathPainter.js"
-import {Matrix} from "src/math/Matrix.js"
-import {Shaders} from "src/webgl/Shaders.js"
-import {Util} from "src/base/Util.js"
-import {WglArg} from "src/webgl/WglArg.js"
-import {WglConfiguredShader} from "src/webgl/WglConfiguredShader.js"
+import {CircuitShaders} from "../../src/circuit/CircuitShaders.js"
+import {Gate, GateBuilder} from "../../src/circuit/Gate.js"
+import {GatePainting} from "../../src/draw/GatePainting.js"
+import {GateShaders} from "../../src/circuit/GateShaders.js"
+import {MathPainter} from "../../src/draw/MathPainter.js"
+import {Matrix} from "../../src/math/Matrix.js"
+import {Shaders} from "../../src/webgl/Shaders.js"
+import {Util} from "../../src/base/Util.js"
+import {WglArg} from "../../src/webgl/WglArg.js"
+import {WglConfiguredShader} from "../../src/webgl/WglConfiguredShader.js"
 import {
     Inputs,
     Outputs,
     currentShaderCoder,
     makePseudoShaderWithInputsAndOutputAndCode
-} from "src/webgl/ShaderCoders.js"
-import {WglTexturePool} from "src/webgl/WglTexturePool.js"
-import {WglTextureTrader} from "src/webgl/WglTextureTrader.js"
+} from "../../src/webgl/ShaderCoders.js"
+import {WglTexturePool} from "../../src/webgl/WglTexturePool.js"
+import {WglTextureTrader} from "../../src/webgl/WglTextureTrader.js"
 
 /**
  * @param {!WglTexture} inp

@@ -12,15 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import {Painter} from "src/draw/Painter.js"
-import {Format} from "src/base/Format.js"
-import {Point} from "src/math/Point.js"
-import {Rect} from "src/math/Rect.js"
-import {seq, Seq} from "src/base/Seq.js"
-import {Util} from "src/base/Util.js"
-import {Config} from "src/Config.js"
-import {Complex} from "src/math/Complex.js"
-import {Matrix} from "src/math/Matrix.js"
+import {Painter} from "../../src/draw/Painter.js"
+import {Format} from "../../src/base/Format.js"
+import {Point} from "../../src/math/Point.js"
+import {Rect} from "../../src/math/Rect.js"
+import {seq, Seq} from "../../src/base/Seq.js"
+import {Util} from "../../src/base/Util.js"
+import {Config} from "../../src/Config.js"
+import {Complex} from "../../src/math/Complex.js"
+import {Matrix} from "../../src/math/Matrix.js"
 
 class MathPainter {
     static describeProbability(p, fractionalDigits) {

@@ -12,22 +12,22 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import {CircuitDefinition} from "src/circuit/CircuitDefinition.js"
-import {Complex} from "src/math/Complex.js"
-import {Config} from "src/Config.js"
-import {CustomGateSet} from "src/circuit/CustomGateSet.js"
-import {describe} from "src/base/Describe.js"
-import {DetailedError} from "src/base/DetailedError.js"
-import {Format} from "src/base/Format.js"
-import {Gate, GateBuilder} from "src/circuit/Gate.js"
-import {GateColumn} from "src/circuit/GateColumn.js"
-import {Gates, INITIAL_STATES_TO_GATES} from "src/gates/AllGates.js"
-import {Matrix} from "src/math/Matrix.js"
-import {Util} from "src/base/Util.js"
-import {notifyAboutRecoveryFromUnexpectedError} from "src/fallback.js"
-import {MysteryGateSymbol, MysteryGateMakerWithMatrix} from "src/gates/Joke_MysteryGate.js"
-import {seq} from "src/base/Seq.js"
-import {setGateBuilderEffectToCircuit} from "src/circuit/CircuitComputeUtil.js"
+import {CircuitDefinition} from "../../src/circuit/CircuitDefinition.js"
+import {Complex} from "../../src/math/Complex.js"
+import {Config} from "../../src/Config.js"
+import {CustomGateSet} from "../../src/circuit/CustomGateSet.js"
+import {describe} from "../../src/base/Describe.js"
+import {DetailedError} from "../../src/base/DetailedError.js"
+import {Format} from "../../src/base/Format.js"
+import {Gate, GateBuilder} from "../../src/circuit/Gate.js"
+import {GateColumn} from "../../src/circuit/GateColumn.js"
+import {Gates, INITIAL_STATES_TO_GATES} from "../../src/gates/AllGates.js"
+import {Matrix} from "../../src/math/Matrix.js"
+import {Util} from "../../src/base/Util.js"
+import {notifyAboutRecoveryFromUnexpectedError} from "../../src/fallback.js"
+import {MysteryGateSymbol, MysteryGateMakerWithMatrix} from "../../src/gates/Joke_MysteryGate.js"
+import {seq} from "../../src/base/Seq.js"
+import {setGateBuilderEffectToCircuit} from "../../src/circuit/CircuitComputeUtil.js"
 
 /** @type {!function(!GateDrawParams)} */
 let matrixDrawer = undefined;

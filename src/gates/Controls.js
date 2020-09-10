@@ -12,15 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import {GateBuilder} from "src/circuit/Gate.js"
-import {GatePainting} from "src/draw/GatePainting.js"
-import {GateShaders} from "src/circuit/GateShaders.js"
-import {HalfTurnGates} from "src/gates/HalfTurnGates.js"
-import {QuarterTurnGates} from "src/gates/QuarterTurnGates.js"
-import {Config} from "src/Config.js"
-import {ketArgs, ketShaderPermute} from "src/circuit/KetShaderUtil.js";
-import {WglArg} from "src/webgl/WglArg.js";
-import {Util} from "src/base/Util.js";
+import {GateBuilder} from "../../src/circuit/Gate.js"
+import {GatePainting} from "../../src/draw/GatePainting.js"
+import {GateShaders} from "../../src/circuit/GateShaders.js"
+import {HalfTurnGates} from "../../src/gates/HalfTurnGates.js"
+import {QuarterTurnGates} from "../../src/gates/QuarterTurnGates.js"
+import {Config} from "../../src/Config.js"
+import {ketArgs, ketShaderPermute} from "../../src/circuit/KetShaderUtil.js";
+import {WglArg} from "../../src/webgl/WglArg.js";
+import {Util} from "../../src/base/Util.js";
 
 let Controls = {};
 

@@ -12,18 +12,18 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import {CachablePainting} from "src/draw/CachablePainting.js"
-import {CircuitStats} from "src/circuit/CircuitStats.js"
-import {Config} from "src/Config.js"
-import {GateDrawParams} from "src/draw/GateDrawParams.js"
-import {GatePainting} from "src/draw/GatePainting.js"
-import {Hand} from "src/ui/Hand.js"
-import {MysteryGateSymbol, MysteryGateMaker} from "src/gates/Joke_MysteryGate.js"
-import {Rect} from "src/math/Rect.js"
-import {Painter} from "src/draw/Painter.js"
-import {Point} from "src/math/Point.js"
-import {seq} from "src/base/Seq.js"
-import {WidgetPainter} from "src/draw/WidgetPainter.js"
+import {CachablePainting} from "../../src/draw/CachablePainting.js"
+import {CircuitStats} from "../../src/circuit/CircuitStats.js"
+import {Config} from "../../src/Config.js"
+import {GateDrawParams} from "../../src/draw/GateDrawParams.js"
+import {GatePainting} from "../../src/draw/GatePainting.js"
+import {Hand} from "../../src/ui/Hand.js"
+import {MysteryGateSymbol, MysteryGateMaker} from "../../src/gates/Joke_MysteryGate.js"
+import {Rect} from "../../src/math/Rect.js"
+import {Painter} from "../../src/draw/Painter.js"
+import {Point} from "../../src/math/Point.js"
+import {seq} from "../../src/base/Seq.js"
+import {WidgetPainter} from "../../src/draw/WidgetPainter.js"
 
 class DisplayedToolbox {
     /**

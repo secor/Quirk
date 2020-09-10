@@ -12,27 +12,27 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import {Config} from "src/Config.js"
-import {CircuitShaders} from "src/circuit/CircuitShaders.js"
-import {Gate} from "src/circuit/Gate.js"
-import {GatePainting} from "src/draw/GatePainting.js"
-import {GateShaders} from "src/circuit/GateShaders.js"
-import {Format} from "src/base/Format.js"
-import {MathPainter} from "src/draw/MathPainter.js"
-import {Matrix, complexVectorToReadableJson, realVectorToReadableJson} from "src/math/Matrix.js"
-import {probabilityStatTexture} from "src/gates/ProbabilityDisplay.js"
-import {Point} from "src/math/Point.js"
-import {Util} from "src/base/Util.js"
-import {Shaders} from "src/webgl/Shaders.js"
-import {WglConfiguredShader} from "src/webgl/WglConfiguredShader.js"
+import {Config} from "../../src/Config.js"
+import {CircuitShaders} from "../../src/circuit/CircuitShaders.js"
+import {Gate} from "../../src/circuit/Gate.js"
+import {GatePainting} from "../../src/draw/GatePainting.js"
+import {GateShaders} from "../../src/circuit/GateShaders.js"
+import {Format} from "../../src/base/Format.js"
+import {MathPainter} from "../../src/draw/MathPainter.js"
+import {Matrix, complexVectorToReadableJson, realVectorToReadableJson} from "../../src/math/Matrix.js"
+import {probabilityStatTexture} from "../../src/gates/ProbabilityDisplay.js"
+import {Point} from "../../src/math/Point.js"
+import {Util} from "../../src/base/Util.js"
+import {Shaders} from "../../src/webgl/Shaders.js"
+import {WglConfiguredShader} from "../../src/webgl/WglConfiguredShader.js"
 import {
     Inputs,
     Outputs,
     currentShaderCoder,
     makePseudoShaderWithInputsAndOutputAndCode
-} from "src/webgl/ShaderCoders.js"
-import {WglTexturePool} from "src/webgl/WglTexturePool.js"
-import {WglTextureTrader} from "src/webgl/WglTextureTrader.js"
+} from "../../src/webgl/ShaderCoders.js"
+import {WglTexturePool} from "../../src/webgl/WglTexturePool.js"
+import {WglTextureTrader} from "../../src/webgl/WglTextureTrader.js"
 
 /**
  * @param {!WglTexture} stateKet

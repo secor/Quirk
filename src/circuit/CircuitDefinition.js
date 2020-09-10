@@ -12,19 +12,19 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import {CircuitShaders} from "src/circuit/CircuitShaders.js"
-import {Config} from "src/Config.js"
-import {Controls} from "src/circuit/Controls.js"
-import {CustomGateSet} from "src/circuit/CustomGateSet.js"
-import {DetailedError} from "src/base/DetailedError.js"
-import {equate_Maps} from "src/base/Equate.js";
-import {Gate} from "src/circuit/Gate.js"
-import {GateColumn} from "src/circuit/GateColumn.js"
-import {GateShaders} from "src/circuit/GateShaders.js"
-import {Gates, INITIAL_STATES_TO_GATES} from "src/gates/AllGates.js"
-import {Point} from "src/math/Point.js"
-import {seq, Seq} from "src/base/Seq.js"
-import {Util} from "src/base/Util.js"
+import {CircuitShaders} from "../../src/circuit/CircuitShaders.js"
+import {Config} from "../../src/Config.js"
+import {Controls} from "../../src/circuit/Controls.js"
+import {CustomGateSet} from "../../src/circuit/CustomGateSet.js"
+import {DetailedError} from "../../src/base/DetailedError.js"
+import {equate_Maps} from "../../src/base/Equate.js";
+import {Gate} from "../../src/circuit/Gate.js"
+import {GateColumn} from "../../src/circuit/GateColumn.js"
+import {GateShaders} from "../../src/circuit/GateShaders.js"
+import {Gates, INITIAL_STATES_TO_GATES} from "../../src/gates/AllGates.js"
+import {Point} from "../../src/math/Point.js"
+import {seq, Seq} from "../../src/base/Seq.js"
+import {Util} from "../../src/base/Util.js"
 
 /**
  * Defines a circuit layout, with wires and columns and gates.

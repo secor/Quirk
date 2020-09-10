@@ -12,12 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import {Config} from "src/Config.js"
-import {Gate} from "src/circuit/Gate.js"
-import {ketArgs, ketShaderPermute} from "src/circuit/KetShaderUtil.js"
-import {GatePainting} from "src/draw/GatePainting.js"
-import {Point} from "src/math/Point.js"
-import {Seq} from "src/base/Seq.js"
+import {Config} from "../../src/Config.js"
+import {Gate} from "../../src/circuit/Gate.js"
+import {ketArgs, ketShaderPermute} from "../../src/circuit/KetShaderUtil.js"
+import {GatePainting} from "../../src/draw/GatePainting.js"
+import {Point} from "../../src/math/Point.js"
+import {Seq} from "../../src/base/Seq.js"
 
 let InterleaveBitsGates = {};
 
