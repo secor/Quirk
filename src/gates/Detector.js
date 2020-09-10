@@ -12,18 +12,18 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import {GateBuilder} from 'src/circuit/Gate.js'
-import {amplitudesToProbabilities} from 'src/gates/ProbabilityDisplay.js'
-import {WglTexturePool} from 'src/webgl/WglTexturePool.js';
-import {WglTextureTrader} from 'src/webgl/WglTextureTrader.js';
-import {Shaders} from 'src/webgl/Shaders.js'
-import {currentShaderCoder, Inputs} from 'src/webgl/ShaderCoders.js';
-import {CircuitShaders} from 'src/circuit/CircuitShaders.js'
-import {Controls} from 'src/circuit/Controls.js';
-import {WglArg} from 'src/webgl/WglArg.js';
-import {Config} from 'src/Config.js'
-import {GatePainting} from 'src/draw/GatePainting.js'
-import {makePseudoShaderWithInputsAndOutputAndCode, Outputs} from 'src/webgl/ShaderCoders.js';
+import {GateBuilder} from '../../src/circuit/Gate.js'
+import {amplitudesToProbabilities} from '../../src/gates/ProbabilityDisplay.js'
+import {WglTexturePool} from '../../src/webgl/WglTexturePool.js';
+import {WglTextureTrader} from '../../src/webgl/WglTextureTrader.js';
+import {Shaders} from '../../src/webgl/Shaders.js'
+import {currentShaderCoder, Inputs} from '../../src/webgl/ShaderCoders.js';
+import {CircuitShaders} from '../../src/circuit/CircuitShaders.js'
+import {Controls} from '../../src/circuit/Controls.js';
+import {WglArg} from '../../src/webgl/WglArg.js';
+import {Config} from '../../src/Config.js'
+import {GatePainting} from '../../src/draw/GatePainting.js'
+import {makePseudoShaderWithInputsAndOutputAndCode, Outputs} from '../../src/webgl/ShaderCoders.js';
 import {Matrix} from "../../src/math/Matrix.js";
 import {GateShaders} from "../../src/circuit/GateShaders.js";
 import {Point} from "../../src/math/Point.js";
